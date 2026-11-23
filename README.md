@@ -79,6 +79,13 @@ O `build.py` avisa se alguma página tiver travessões (— ou –) no texto. Us
 
 O site está publicado no GitHub Pages: https://mozwebsites-01.github.io/ampr-website/
 
-Cada `git push` para `main` volta a publicar a pasta `site/` automaticamente (`.github/workflows/pages.yml`). Corra `python3 build.py` antes do commit.
+O GitHub Pages serve o ramo `gh-pages`, que contém só a pasta `site/`. Para publicar alterações:
+
+```bash
+python3 build.py
+git add -A && git commit -m "Actualizar site"
+git push
+git subtree push --prefix site origin gh-pages
+```
 
 Enquanto o endereço for o do GitHub Pages, o site está marcado para não ser indexado pelo Google (`noindex`). Ao mudar `SITE_URL` em `build.py` para o domínio final, essa marca sai sozinha.
