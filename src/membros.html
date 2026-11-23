@@ -1,0 +1,151 @@
+<!--{
+  "title": "Torne-se membro da AMPR",
+  "description": "Profissionais, estudantes e instituições: saiba como aderir e quais os benefícios."
+}-->
+
+<section class="page-hero has-photo" aria-labelledby="page-title">
+  {{photo_bg:foto-membros.jpg}}
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="index.html">Início</a></li><li>Membros</li></ol>
+    <h1 id="page-title">Torne-se membro da AMPR</h1>
+    <p class="lead">Profissionais, estudantes e instituições que trabalham ou estudam com radiações ionizantes são bem-vindos.</p>
+  </div>
+</section>
+
+<!-- TODO AMPR: confirmar categorias com os estatutos -->
+<section class="section" aria-labelledby="cat-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="cat-title">Quem pode ser membro</h2>
+      <p>Escolha a categoria que corresponde à sua situação. Se tiver dúvidas, diga-nos no formulário.</p>
+    </div>
+    <div class="cat-list">
+      <div class="cat"><h3>Membro efectivo</h3><p>Profissionais que trabalham com radiações ionizantes: técnicos de radiologia, físicos médicos, médicos, engenheiros, oficiais de protecção radiológica e inspectores.</p></div>
+      <div class="cat"><h3>Membro estudante</h3><p>Estudantes de radiologia, física, medicina, engenharia e áreas afins.</p></div>
+      <div class="cat"><h3>Membro institucional</h3><p>Hospitais, clínicas, empresas, universidades e outras entidades que usam a radiação ou ensinam sobre ela.</p></div>
+      <div class="cat"><h3>Membro honorário</h3><p>Personalidades que se distinguiram na protecção radiológica, por deliberação da Assembleia Geral.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-green on-dark" aria-labelledby="ben-title">
+  <div class="container benefits-wrap">
+    <h2 id="ben-title">Benefícios</h2>
+    <ul class="bullets">
+      <li>Acesso prioritário e condições especiais em formações, workshops e jornadas</li>
+      <li>Contacto com profissionais de todo o país</li>
+      <li>Informação actualizada sobre legislação, normas e boas práticas</li>
+      <li>Oportunidades de intercâmbio e de participação em eventos internacionais</li>
+      <li>Voz activa junto das autoridades reguladoras</li>
+      <li>Direito de voto e de candidatura aos órgãos sociais (membros efectivos)</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="steps-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="steps-title">Como aderir</h2>
+    </div>
+    <ol class="steps">
+      <li><strong>Preencha o formulário</strong><span>Está logo abaixo, nesta página.</span></li>
+      <li><strong>Anexe os documentos</strong><span>Documento de identificação e comprovativo de formação ou de vínculo profissional.</span></li>
+      <li><strong>Pague a jóia e a quota</strong><span>A jóia de inscrição e a quota anual, nos valores definidos pela AMPR.</span></li>
+      <li><strong>Receba a confirmação</strong><span>Enviamos a confirmação e o seu cartão de membro.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section bg-mist" id="adesao" aria-labelledby="form-title">
+  <div class="container-narrow">
+    <div class="section-head">
+      <h2 id="form-title">Formulário de adesão</h2>
+      <p>Os campos marcados com <span class="req">*</span> são obrigatórios.</p>
+    </div>
+    <form class="form-card js-form" data-endpoint="" data-success="Pedido de adesão enviado. Vamos analisar os seus dados e entrar em contacto." enctype="multipart/form-data" novalidate>
+      <div class="form-grid">
+        <div class="field full">
+          <label for="m-nome">Nome completo <span class="req">*</span></label>
+          <input class="input" id="m-nome" name="nome" autocomplete="name" required>
+          <span class="field-error" id="m-nome-err"></span>
+        </div>
+        <div class="field">
+          <label for="m-cat">Categoria de membro <span class="req">*</span></label>
+          <select class="select" id="m-cat" name="categoria" required>
+            <option value="">Escolha uma categoria</option>
+            <option>Membro efectivo</option>
+            <option>Membro estudante</option>
+            <option>Membro institucional</option>
+            <option>Não sei qual escolher</option>
+          </select>
+          <span class="field-error" id="m-cat-err"></span>
+        </div>
+        <div class="field">
+          <label for="m-prov">Província <span class="req">*</span></label>
+          <select class="select" id="m-prov" name="provincia" required>
+            <option value="">Escolha a província</option>
+            <option>Cabo Delgado</option><option>Gaza</option><option>Inhambane</option><option>Manica</option>
+            <option>Maputo Cidade</option><option>Maputo Província</option><option>Nampula</option><option>Niassa</option>
+            <option>Sofala</option><option>Tete</option><option>Zambézia</option>
+          </select>
+          <span class="field-error" id="m-prov-err"></span>
+        </div>
+        <div class="field">
+          <label for="m-inst">Instituição onde trabalha ou estuda <span class="req">*</span></label>
+          <input class="input" id="m-inst" name="instituicao" autocomplete="organization" required>
+          <span class="field-error" id="m-inst-err"></span>
+        </div>
+        <div class="field">
+          <label for="m-func">Função</label>
+          <input class="input" id="m-func" name="funcao" autocomplete="organization-title" placeholder="Por exemplo, técnico de radiologia">
+          <span class="field-error" id="m-func-err"></span>
+        </div>
+        <div class="field">
+          <label for="m-tel">Telefone ou WhatsApp <span class="req">*</span></label>
+          <input class="input" id="m-tel" name="telefone" type="tel" autocomplete="tel" required pattern="[+0-9 ()-]{9,}" data-pattern-msg="Escreva um número com pelo menos 9 dígitos.">
+          <span class="field-error" id="m-tel-err"></span>
+        </div>
+        <div class="field">
+          <label for="m-email">E-mail <span class="req">*</span></label>
+          <input class="input" id="m-email" name="email" type="email" autocomplete="email" required>
+          <span class="field-error" id="m-email-err"></span>
+        </div>
+        <fieldset class="field full radio-row">
+          <legend>Área de actuação</legend>
+          <label class="radio-chip"><input type="radio" name="area" value="Saúde" checked><span>Saúde</span></label>
+          <label class="radio-chip"><input type="radio" name="area" value="Indústria"><span>Indústria</span></label>
+          <label class="radio-chip"><input type="radio" name="area" value="Ensino"><span>Ensino</span></label>
+          <label class="radio-chip"><input type="radio" name="area" value="Investigação"><span>Investigação</span></label>
+          <label class="radio-chip"><input type="radio" name="area" value="Regulação"><span>Regulação</span></label>
+        </fieldset>
+        <div class="field">
+          <label for="m-doc">Documento de identificação <span class="req">*</span> <span class="hint">PDF ou imagem</span></label>
+          <input class="input" id="m-doc" name="identificacao" type="file" accept=".pdf,image/*" required>
+          <span class="field-error" id="m-doc-err"></span>
+        </div>
+        <div class="field">
+          <label for="m-comp">Comprovativo de formação ou vínculo <span class="req">*</span> <span class="hint">PDF ou imagem</span></label>
+          <input class="input" id="m-comp" name="comprovativo" type="file" accept=".pdf,image/*" required>
+          <span class="field-error" id="m-comp-err"></span>
+        </div>
+        <div class="field full">
+          <label class="check"><input type="checkbox" name="consentimento" required><span>Autorizo a AMPR a tratar os meus dados para a adesão, conforme a <a href="privacidade.html">política de privacidade</a>. <span class="req">*</span></span></label>
+          <span class="field-error" id="m-cons-err"></span>
+        </div>
+        <div class="full form-actions">
+          <button class="btn btn-green" type="submit">Enviar pedido de adesão</button>
+        </div>
+        <div class="full form-status" role="status" aria-live="polite"></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section-tight" aria-labelledby="area-membro-title">
+  <div class="container-narrow">
+    <div class="note">
+      <h3 id="area-membro-title">Área do membro</h3>
+      <p>Em preparação: um espaço reservado onde vai poder consultar a situação das quotas, descarregar o certificado de membro e ler as convocatórias e actas das Assembleias Gerais.</p>
+    </div>
+  </div>
+</section>

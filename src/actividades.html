@@ -1,0 +1,78 @@
+<!--{
+  "title": "Eventos e notícias | AMPR",
+  "description": "Jornadas, formações e notícias sobre protecção radiológica em Moçambique."
+}-->
+
+<section class="page-hero has-photo" aria-labelledby="page-title">
+  {{photo_bg:foto-actividades.jpg}}
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="index.html">Início</a></li><li>Actividades</li></ol>
+    <h1 id="page-title">Actividades</h1>
+    <p class="lead">Jornadas, formações e encontros da AMPR. Cada actividade é uma oportunidade para aprender, partilhar e reforçar a protecção radiológica no país.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" data-tabs>
+    <div class="tabs" role="tablist" aria-label="Tipo de actividade">
+      <button class="tab" role="tab" id="tab-eventos" aria-controls="panel-eventos" data-hash="eventos">Próximos eventos</button>
+      <button class="tab" role="tab" id="tab-noticias" aria-controls="panel-noticias" data-hash="noticias">Notícias e comunicados</button>
+      <button class="tab" role="tab" id="tab-galeria" aria-controls="panel-galeria" data-hash="galeria">Galeria</button>
+    </div>
+
+    <!-- TODO AMPR: acrescentar jornadas, cursos e webinars com data, local e inscrição -->
+    <div class="tab-panel" role="tabpanel" id="panel-eventos" aria-labelledby="tab-eventos" tabindex="0">
+      <ul class="event-list">
+        <li class="event">
+          <div class="event-date">8 Nov<small>todos os anos</small></div>
+          <div>
+            <h3>Dia Internacional da Radiologia</h3>
+            <p>Assinala a descoberta dos raios X, em 1895.</p>
+          </div>
+        </li>
+        <li class="event">
+          <div class="event-date">A anunciar<small>todos os anos</small></div>
+          <div>
+            <h3>Assembleia Geral da AMPR</h3>
+            <p>A convocatória e a ordem de trabalhos são publicadas em Notícias e comunicados.</p>
+          </div>
+        </li>
+        <li class="event">
+          <div class="event-date">A anunciar</div>
+          <div>
+            <h3>Aniversário da AMPR</h3>
+            <p>Data de fundação da associação.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-panel" role="tabpanel" id="panel-noticias" aria-labelledby="tab-noticias" tabindex="0" hidden>
+      <article class="news-item">
+        {{media:|Foto de família da jornada técnico-científica da AMPR|jornada.jpg}}
+        <div class="news-body">
+          <p class="meta">Notícia</p>
+          <h3><a href="noticia-jornada.html">AMPR reúne profissionais em jornada técnico-científica sobre protecção radiológica</a></h3>
+          <p>Profissionais de saúde, docentes, estudantes e parceiros discutiram como reforçar a segurança no uso das radiações ionizantes.</p>
+          <a class="link-more" href="noticia-jornada.html">Ler a notícia</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="tab-panel" role="tabpanel" id="panel-galeria" aria-labelledby="tab-galeria" tabindex="0" hidden>
+      {{gallery}}
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="band-title">
+  <div class="container band-inner">
+    <div>
+      <h2 id="band-title">Tem uma proposta de actividade?</h2>
+      <p>Estamos abertos a propostas de formação, de oradores e de instituições que queiram acolher um evento.</p>
+    </div>
+    <div class="band-actions">
+      <a class="btn btn-white" href="contactos.html?assunto=Formação">Enviar proposta</a>
+    </div>
+  </div>
+</section>

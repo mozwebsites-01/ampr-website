@@ -1,0 +1,73 @@
+<!--{
+  "title": "Contactos | AMPR",
+  "description": "Fale com a Associação Moçambicana de Protecção Radiológica."
+}-->
+
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="hero-orbit">{{orbit}}</div>
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="index.html">Início</a></li><li>Contactos</li></ol>
+    <h1 id="page-title">Fale com a AMPR</h1>
+    <p class="lead">Tem uma dúvida, quer aderir ou propor uma parceria? Envie-nos uma mensagem e respondemos com a maior brevidade.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-layout">
+    <form class="form-card js-form" data-endpoint="" novalidate aria-labelledby="form-title">
+      <h2 id="form-title">Envie uma mensagem</h2>
+      <p class="muted" style="margin-bottom:1.5rem">Os campos marcados com <span class="req">*</span> são obrigatórios.</p>
+      <div class="form-grid">
+        <div class="field">
+          <label for="c-nome">Nome <span class="req">*</span></label>
+          <input class="input" id="c-nome" name="nome" autocomplete="name" required>
+          <span class="field-error" id="c-nome-err"></span>
+        </div>
+        <div class="field">
+          <label for="c-email">E-mail <span class="req">*</span></label>
+          <input class="input" id="c-email" name="email" type="email" autocomplete="email" required>
+          <span class="field-error" id="c-email-err"></span>
+        </div>
+        <div class="field">
+          <label for="c-tel">Telefone</label>
+          <input class="input" id="c-tel" name="telefone" type="tel" autocomplete="tel">
+          <span class="field-error" id="c-tel-err"></span>
+        </div>
+        <div class="field">
+          <label for="c-assunto">Assunto <span class="req">*</span></label>
+          <select class="select" id="c-assunto" name="assunto" required>
+            <option value="">Escolha o assunto</option>
+            <option value="Adesão">Adesão</option>
+            <option value="Formação">Formação</option>
+            <option value="Parceria">Parceria</option>
+            <option value="Imprensa">Imprensa</option>
+            <option value="Outro">Outro</option>
+          </select>
+          <span class="field-error" id="c-assunto-err"></span>
+        </div>
+        <div class="field full">
+          <label for="c-msg">Mensagem <span class="req">*</span></label>
+          <textarea class="textarea" id="c-msg" name="mensagem" required></textarea>
+          <span class="field-error" id="c-msg-err"></span>
+        </div>
+        <div class="field full">
+          <label class="check"><input type="checkbox" name="consentimento" required><span>Autorizo a AMPR a usar estes dados para responder à minha mensagem, conforme a <a href="privacidade.html">política de privacidade</a>. <span class="req">*</span></span></label>
+          <span class="field-error" id="c-cons-err"></span>
+        </div>
+        <div class="full form-actions">
+          <button class="btn btn-green" type="submit">Enviar mensagem</button>
+        </div>
+        <div class="full form-status" role="status" aria-live="polite"></div>
+      </div>
+    </form>
+
+    <div>
+      <h2>Contactos</h2>
+      {{contact_list}}
+      <!-- TODO AMPR: trocar "Maputo" pelo endereço exacto -->
+      <div class="map-frame">
+        <iframe title="Mapa de Maputo" src="https://maps.google.com/maps?q=Maputo%2C%20Mo%C3%A7ambique&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
